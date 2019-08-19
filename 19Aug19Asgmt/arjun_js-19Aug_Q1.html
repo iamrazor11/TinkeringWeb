@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt1-Guess</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Guess Work</h1>
+<h2>Input a number:</h2>
+<input type="number" id="inp1" name="num">
+<button type="button" id="btn"> Click Me</button>
+<p id="op1"></p>
+</body>
+<script type="text/javascript">
+	$(function(){
+
+	$("#btn").click(function(){
+
+		var inpNum=$("#inp1").val();
+		console.log("input="+inpNum);
+		var rand=(Math.random().toPrecision(1)*10);
+		console.log("random="+rand);
+		if(rand==inpNum)
+		{console.log("yes");
+			$("#op1").text("Right On!");
+		}
+		else 
+			$("#op1").text("Unlucky :(")
+	});	
+});
+	// name_jsq1.html
+</script>
+</html>

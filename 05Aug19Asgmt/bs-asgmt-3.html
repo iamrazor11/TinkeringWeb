@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt3-HotelBooking</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<style type="text/css">
+		.checked{
+			color: orange;
+		}
+		div.card {
+			margin-top: 50px;
+			width:22%;
+			border-radius:3%;
+		/*	border-top-right-radius: 3%;
+			border-top-left-radius: 3%; */
+			margin-left: 30px;
+		    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		/*#cardbox .card img{
+			border-top-right-radius: 3%;
+			border-top-left-radius: 3%;  
+		}*/
+		.face{
+			position: relative;
+			top: -19%;
+			left:4%;
+		}
+
+		.facetext{
+			position: relative;
+			top: -26%;
+			left:20%;
+			color: white;
+			font-size: 18px;
+			font-weight:bold; 
+		}
+
+		.heart{
+			opacity: 0.5;
+			position: relative;
+			top: -43%;
+			left:84%;
+		}
+
+		.card-title{
+			margin-top: -85px;
+			font-weight: bold;
+		}
+
+
+	</style>
+<div class="container-fluid">
+	<div class="row pl-5 pt-5">
+		<h3 style="color: #EF337E"><b>HURRY UP, THESE ARE EXPIRING SOON. <br>
+		<span class="display-3 text-left text-dark"><b>Last minute deals</b></span></b></h3>
+		<span style="padding-left: 53%"><a href="#" class="text-secondary">See all deals >></a></span>
+		<div class="row">
+			<!-- card1 -->
+			<div id="cardbox" class="card ">
+				<img class="card-image-top" src="plane1.jpg" style="width: 100%">
+				<img class="card-image-top rounded-circle heart" src="heart.png" height="30px" width="30px">
+				<img class="card-image-top rounded-circle face" src="face.jpg" height="50px" width="50px">
+				<span class="facetext"> Pilot</span>
+				<div class="card-body">
+					<a href="#"><h5 class="card-title text-dark">Vintage Aircraft - Nimble at controls</h5></a><br>
+					<p class="card-text text-secondary"> USN T6 Texan 
+					<span class="float-right">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</span>
+						<br><br>
+					<span style="color: #3F43EB;font-size:24px; "><b>$75</b></span> per flight</p>
+				</div>
+			</div>
+				<!--card2  -->
+			<div id="cardbox" class="card ">
+				<img class="card-image-top" src="plane2.jpg" style="width: 100%">
+				<img class="card-image-top rounded-circle heart" src="heart.png" height="30px" width="30px">
+				<img class="card-image-top rounded-circle face" src="face.jpg" height="50px" width="50px">
+				<span class="facetext"> Pilot</span>
+				<div class="card-body">
+					<a href="#"><h5 class="card-title text-dark">4Gen Fighter Aircraft - Carrier based</h5></a><br>
+					<p class="card-text text-secondary"> USN F/A 18 Hornet
+					<span class="float-right">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</span>
+						<br><br>
+					<span style="color: #3F43EB; font-size:24px;" font-size:24px;><b>$75</b></span> per flight</p>
+				</div>
+			</div>
+			<!-- card3 -->
+			<div id="cardbox" class="card ">
+				<img class="card-image-top" src="plane3.jpg" style="width: 100%">
+				<img class="card-image-top rounded-circle heart" src="heart.png" height="30px" width="30px">
+				<img class="card-image-top rounded-circle face" src="face.jpg" height="50px" width="50px">
+				<span class="facetext"> Pilot</span>
+				<div class="card-body">
+					<a href="#"><h5 class="card-title text-dark">Cold War era Aircraft - Oldest jet Fighter flying</h5></a><br>
+					<p class="card-text text-secondary"> MiG 21 Lancer 
+					<span class="float-right">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</span>
+						<br><br>
+					<span style="color: #3F43EB; font-size:24px;" font-size:24px;><b>$75</b></span> per flight</p>
+				</div>
+			</div>
+			<!-- card4 -->
+			<div id="cardbox" class="card ">
+				<img class="card-image-top" src="plane4.jpg" height="235px" style="width: 100%">
+				<img class="card-image-top rounded-circle heart" src="heart.png" height="30px" width="30px">
+				<img class="card-image-top rounded-circle face" src="face.jpg" height="50px" width="50px">
+				<span class="facetext"> Pilot</span>
+				<div class="card-body">
+					<a href="#"><h5 class="card-title text-dark">Vintage Aircraft - Commercial airliner</h5></a><br>
+					<p class="card-text text-secondary">Douglas DC-4 
+					<span class="float-right">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</span>
+						<br><br>
+					<span style="color: #3F43EB; font-size:24px;" font-size:24px;><b>$75</b></span> per flight</p>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>

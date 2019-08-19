@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt2-Num to Array</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+<h1>Make an array from a number</h1>
+<h3>Enter a number to make an array:</h3>
+<input type="number" id="ip1">
+<p id="op1"></p>
+<p id="op2"></p>
+</body>
+<script type="text/javascript">
+	$(function(){
+		var num=$("#ip1").val();
+		//var st=" ";
+		st=num.toString();
+		$("#op1").text("String output="+st);
+		var numArr=[];
+		var n=0;
+		var temp=0;	
+		n=num;
+		for(;n>0;n=Math.trunc(n/10))
+		{
+			temp=n%10;
+			numArr.push(temp);
+			console.log(temp);
+		}
+		numArr.reverse();
+		$("#op2").text("Array Output=")
+		for(i=0;i<numArr.length;i++)
+		{
+			document.getElementById("op2").innerHTML+=" "+numArr[i];
+		}
+	});
+</script>
+</html>

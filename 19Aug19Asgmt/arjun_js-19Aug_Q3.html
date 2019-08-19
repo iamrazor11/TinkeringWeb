@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt3-AlphabeticalOrder</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Making a string to Alphabetical order</h1>
+<h3>Enter a string:</h3>
+<input type="text" id="ip1">
+<br>
+<button type="button" id="btn">Sort it</button>
+<br>
+<h4 id="op1"></h4>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){
+			var st=$("#ip1").val().split();
+			console.log(st.sort());
+			$("#op1").text("sorted String="+st);
+
+		});
+	});
+</script>
+</html>

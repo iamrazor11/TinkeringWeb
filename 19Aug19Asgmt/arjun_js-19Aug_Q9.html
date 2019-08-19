@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt9-StringMerger</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Merginging the non repeating characters from the inputs into merged string</h1>
+<h3>Enter string1:</h3>
+<input type="text" id="ip1">
+<br>
+<h3>Enter string2:</h3>
+<input type="text" id="ip2">
+<br>
+<button type="button" id="btn">Find it</button><br>
+<h4 id="op1"></h4>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){
+				var st1=$("#ip1").val();
+				var st2=$("#ip2").val();
+				// var st1=document.getElementById('ip1');
+				// var st2=document.getElementById('ip2');
+				var st3=st1;console.log(st3);console.log(typeof(st3));
+				for(i=0;i<st2.length;i++)
+				{
+					if(!(st3.includes(st2[i]))){
+						 st3.push(st2[i]);
+					}
+				}
+				$("#op1").text("Merged Array="+st3);
+
+		});
+	});
+</script>
+</html>

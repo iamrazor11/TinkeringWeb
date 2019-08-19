@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt8-NonRepeatingChars</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Finding the non repeating characters from the input</h1>
+<h3>Enter a string:</h3>
+<input type="text" id="ip1">
+<br>
+<button type="button" id="btn">Find it</button>
+<br>
+<h4 id="op1"></h4>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){
+			var st=$("#ip1").val();
+			// var temp=[];
+			var count=[];
+			$("#op1").text("the non repeating chars=");
+			for(i=0;i<st.length;i++)
+			{
+			  if(st.indexOf(st[i])==st.lastIndexOf(st[i]))
+			  	{
+			  		document.getElementById("op1").innerHTML+=st[i]+" ";
+			  		console.log("in if"+st[i]);
+			  	}	
+			}	
+		});
+	});
+</script>
+</html>

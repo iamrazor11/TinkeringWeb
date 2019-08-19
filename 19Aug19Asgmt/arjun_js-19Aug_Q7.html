@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt7-SubStringCount</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Finding the count of substring from the input</h1>
+<h3>Enter a string:</h3>
+<input type="text" id="ip1">
+<br>
+Enter substring:<input type="text" id="ip2">
+<button type="button" id="btn">Find it</button>
+<br>
+<h4 id="op1"></h4>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){
+			var st=document.getElementById('ip1').value;
+			var subst=document.getElementById('ip1').value;
+			var reg=new RegExp(subst,"g");
+			var c=0;
+			c=(st.match(reg)).length;
+			console.log(c)
+
+		});
+	});
+</script>
+</html>

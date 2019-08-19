@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt13-Character-UpperCase-Check</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Checking whether a character at the index is upper case or not</h1>
+<h3>Enter the string to compare:</h3>
+<input type="text" id="ip1">
+<br>
+<h3>Enter the index:</h3>
+<input type="text" id="ip2">
+<br>
+<button type="button" id="btn">Find it</button>
+<br>
+<h4 id="op1"></h4>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){
+			var index=$("#ip2").val();
+			var st=$("#ip1").val();
+			console.log(st[index]);
+			console.log(st.localeCompare(st[index].toUpperCase()))
+			if(st.localeCompare(st[index].toUpperCase())==true)
+				$("#op1").text("The character at index "+index+" is Upper Case.");
+			else
+				$("#op1").text("The character at index "+index+" is not Upper Case.");
+
+		});
+	});
+</script>
+</html>

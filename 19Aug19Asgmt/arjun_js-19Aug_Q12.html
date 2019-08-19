@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt12-TimeFormat</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Outputting time in the format</h1>
+<!-- <h3>Enter a string:</h3>
+<input type="text" id="ip1">
+<br>
+Enter substring:<input type="text" id="ip2">
+ -->
+<br>
+<h4 id="op1">Today: </h4>
+<br>
+<h4 id="op2">Time is: </h4>
+ <button type="button" id="btn">Find it</button>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){
+			d= new Date();
+			var n = d.toLocaleString();
+			dayArr=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+			var day=d.getDay();
+			console.log(dayArr[day]);
+			document.getElementById('op1').innerHTML+=dayArr[day];
+			document.getElementById('op2').innerHTML+=n.substring(10);
+		});
+	});
+</script>
+</html>

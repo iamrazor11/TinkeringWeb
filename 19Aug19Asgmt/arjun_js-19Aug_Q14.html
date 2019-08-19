@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt14-To-Check-if-a-String-starts-with-a-substring</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Checking whether a string starts with a substring</h1>
+<h3>Enter the string to compare:</h3>
+<input type="text" id="ip1">
+<br>
+<h3>Enter the substring:</h3>
+<input type="text" id="ip2">
+<br>
+<button type="button" id="btn">Find it</button>
+<br>
+<h4 id="op1"></h4>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){
+			var sub=$("#ip2").val();
+			var st=$("#ip1").val();
+			if(st.startsWith(sub)==true)
+			{
+				$("#op1").text("The string: "+st+" starts with the substring: "+sub);
+			}
+			else
+				$("#op1").text("The string: "+st+" does not start with the substring: "+sub);
+
+			
+		});
+	});
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt5-LongestSubString</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Finding the largest substring from the input</h1>
+<h3>Enter a string:</h3>
+<input type="text" id="ip1">
+<br>
+<button type="button" id="btn">Find it</button>
+<br>
+<h4 id="op1"></h4>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){
+			var st=$("#ip1").val().split(" ");
+			var count=0;
+			var temp=0;
+
+			temp=st[0].length;
+			for(var i=0;i<st.length;i++)
+			{
+				if(st[i].length>temp)
+					{
+						temp=st[i].length;
+						count=i;
+					}
+				console.log("count="+count+" temp="+temp);
+			}
+			$("#op1").text("longest sub string="+st[count]);
+
+
+
+		});
+	});
+</script>
+</html>
