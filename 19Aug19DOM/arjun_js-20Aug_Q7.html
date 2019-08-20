@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt7-RemoveOptionFromDropDown</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container pt-5 pb-5 mt-5 bg-light">
+	<h3 class="text-center">Disable the combo dropdown at button click.</h3>
+	<div class="justify-content-center">
+		<div class="dropdown">
+			  <button type="button" id="drp" class="btn-lg btn-primary dropdown-toggle" data-toggle="dropdown">
+			    Drop It
+			  </button>
+			  <div class="dropdown-menu">
+			    <a class="dropdown-item" href="#">Link 1</a>
+			    <a class="dropdown-item" href="#">Link 2</a>
+			    <a class="dropdown-item" href="#">Link 3</a>
+			    <a class="dropdown-item" href="#">Link 4</a>
+			    <a class="dropdown-item" href="#">Link 5</a>
+			    <a class="dropdown-item" href="#">Link 6</a>
+			  </div><br><br>
+		</div>
+		<div> 
+			<br><br>
+			Enter the option to be removed from box:<input type="text" id="ip1">
+			<button id="btn" class="btn btn-outline-dark" data-toggle="collapse" data-target="#pic"><span id="txt">Turn Off Dropdown</span></button>
+		</div>	
+	</div>
+
+</div>	
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function() {
+			var o=$("#ip1").val();
+			var sel=$("ul li a:first");console.log(sel.class);
+			for(i=0;i<n;i++)
+				sel=sel.next();
+			sel.hide();
+		});
+		
+	});	
+
+
+</script>
+</html>

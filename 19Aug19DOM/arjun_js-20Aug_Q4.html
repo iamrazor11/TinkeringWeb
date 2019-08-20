@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt4-ImageSlide</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container pt-5 pb-5 mt-5 bg-light">
+	<h3 class="text-center">Toggle button which when turned on displays an image sliding down from the top and gets hidden when the button is turned off.</h3>
+	<div class="justify-content-center">
+		<div id="pic" class="collapse">
+			<img src="plane5.jpg" height="500px" width="500px">
+		</div>
+		<br>
+		<button id="btn" class="btn btn-outline-dark" data-toggle="collapse" data-target="#pic"><span id="txt">Turn On</span></button>
+	</div>
+
+</div>	
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function() {
+			// var txt=$("#ip1").val();
+			$("#txt").text("Turn Off");
+		});
+	});	
+
+
+</script>
+</html>

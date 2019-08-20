@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asgmt6-CreateDynamicTextBoxes</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container pt-5 pb-5 mt-5 bg-light">
+	<h1 class="text-center">This page will create text-boxes based on user inputs.</h1>
+	
+	Enter the number of text-boxes to create:<input type="text" id="ip1">	
+	
+	<div>
+		<br>
+		<p class="text-gray-dark">Click button create new text-boxes </p>
+		<br><br>
+		<button class="btn btn-primary" id="btn">Get It</button>
+		<br><br>
+		<h5 class="text-center" id="op1"></h5>
+	</div>
+	<div id="textbox">
+
+	</div>
+
+</div>	
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function() {
+			var n=$("#ip1").val();
+			for(i=0;i<n;i++)
+			{
+				document.getElementById('textbox').innerHTML+="input: <input type='text'><br>&nbsp<br>";
+			}
+
+		});
+	});	
+
+
+</script>
+</html>
