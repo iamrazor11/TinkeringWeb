@@ -6,14 +6,9 @@ class arjun_java_20Aug_Q6{
 		while(a>0){
 			r=a%2;
 			a=a/2;
-			b=b+Integer.toString(r);
+			b=Integer.toString(r)+b;
 		}
-		int l=Integer.parseInt(b);
-		while(l>0)
-		{
-			r=l%10;
-			l=l/10;
-			System.out.print(r);
-		}
+
+		System.out.print(b);
 	}
 }
