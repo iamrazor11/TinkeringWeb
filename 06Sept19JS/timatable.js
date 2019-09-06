@@ -29,7 +29,7 @@ function subjectOption(subName) {
     option.value = subName;
     x.add(option);
 }
-var time = ["10-11", "11-12", "12-13", "13-14", "14-15"];
+var time = ["10:00-11:00", "11:00-12:00", "12:00-13:00", "13:00-14:00", "14:00-15:00"];
 var day = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 var teachers = ["Newton", "Tesla", "Hook", "Einstein", "Raman"];
 var subjects = ["Networks", "Avionics", "Physics", "Astronomy", "Programming"];
@@ -41,6 +41,7 @@ function setTeacher(cid) {
     console.log("cid.id[2]=" + cid.id[2]);
     if ((cid.id[2] == 2 && cid.id[1] == 1) || (cid.id[2] == 3 && cid.id[1] == 1) || (cid.id[2] == 4 && cid.id[1] == 1) || (cid.id[2] == 5 && cid.id[1] == 1) || (cid.id[2] == 6 && cid.id[1] == 1)) {
         teachers = ["Newton", "Tesla", "Hook", "Einstein", "Raman"];
+        n = 0, e = 0, t = 0, r = 0;
         console.log("jjja");
     }
 
@@ -148,5 +149,8 @@ function add() {
     teachers.splice(teachers.indexOf(teach), 1);
     teachers.forEach(t => { clearTeacher() });
     document.getElementById("form-space").style.display = "none";
+
+    // const pushtolocal=()=>{ if(localStorage.getItem('trainers') != null) { localStorage.setItem('trainers',JSON.stringify());   }   else{
+    //     localStorage.setItem('trainers',JSON.stringify(trainer)); }}pushtolocal();
 
 }
